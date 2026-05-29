@@ -6,7 +6,7 @@ import time
 import aiohttp
 from discord.ext import tasks
 
-GAMES_URL = "https://raw.githubusercontent.com/lumin-rest/dumpster-fire/main/games.txt"
+GAMES_URL = "https://raw.githubusercontent.com/lumin-rocks/garbage/main/games.txt"
 
 games_cache: list[str] = []
 scrape_started_at: float | None = None

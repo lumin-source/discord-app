@@ -5,7 +5,7 @@ import logging
 import aiohttp
 from discord.ext import tasks
 
-EXECUTORS_URL = "https://raw.githubusercontent.com/lumin-rest/dumpster-fire/main/executors.txt"
+EXECUTORS_URL = "https://raw.githubusercontent.com/lumin-rocks/garbage/main/executors.txt"
 
 executors_cache: list[str] = []
 
