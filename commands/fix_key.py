@@ -71,9 +71,9 @@ class FixKeyView(discord.ui.View):
 
         self.add_item(
             discord.ui.Button(
-                label="Purchase Lifetime",
+                label="Purchase",
                 style=discord.ButtonStyle.link,
-                url="https://lumin.rest/key/",
+                url="https://lumin-rocks.mysellauth.com/",
             )
         )
 
@@ -82,7 +82,7 @@ class FixKeyView(discord.ui.View):
         self, interaction: discord.Interaction, button: discord.ui.Button
     ) -> None:
         _ = button
-        script = '```lua\nloadstring(game:HttpGet("https://lumin.rest/"))()\n```'
+        script = '```lua\nloadstring(game:HttpGet("https://lumin.rocks/"))()\n```'
         await interaction.response.send_message(script, ephemeral=True)
 
     @discord.ui.button(label="Reset HWID", style=discord.ButtonStyle.primary)
