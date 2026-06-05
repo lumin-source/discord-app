@@ -12,9 +12,9 @@ class AllGamesView(discord.ui.View):
         super().__init__(timeout=300)
 
         self.add_item(discord.ui.Button(
-            label="Purchase Lifetime",
+            label="Purchase",
             style=discord.ButtonStyle.link,
-            url="https://lumin.rest/key/",
+            url="https://lumin-rocks.mysellauth.com/",
             row=0,
         ))
 
@@ -23,7 +23,7 @@ class AllGamesView(discord.ui.View):
         self, interaction: discord.Interaction, button: discord.ui.Button
     ) -> None:
         _ = button
-        script = '```lua\nloadstring(game:HttpGet("https://lumin.rest/"))()\n```'
+        script = '```lua\nloadstring(game:HttpGet("https://lumin.rocks/"))()\n```'
         await interaction.response.send_message(script, ephemeral=True)
 
 
@@ -60,7 +60,7 @@ class AllGames(commands.Cog):
                 description=lines,
                 color=discord.Color.blurple(),
             )
-            .set_description(f"All games are supported and fully working.\n- View them on our website [by clicking here](https://lumin.rest/).\n{lines}")
+            .set_description(f"All games are supported and fully working.\n- View them on our website [by clicking here](https://lumin.rocks/).\n{lines}")
             .set_timestamp()
             .build()
         )
