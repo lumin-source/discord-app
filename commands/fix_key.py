@@ -82,7 +82,7 @@ class FixKeyView(discord.ui.View):
         self, interaction: discord.Interaction, button: discord.ui.Button
     ) -> None:
         _ = button
-        script = '```lua\nloadstring(game:HttpGet("https://lumin.rocks/"))()\n```'
+        script = '```lua\nloadstring(game:HttpGet("https://lumin.rest/"))()\n```'
         await interaction.response.send_message(script, ephemeral=True)
 
     @discord.ui.button(label="Reset HWID", style=discord.ButtonStyle.primary)

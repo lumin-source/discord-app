@@ -23,7 +23,7 @@ class AllGamesView(discord.ui.View):
         self, interaction: discord.Interaction, button: discord.ui.Button
     ) -> None:
         _ = button
-        script = '```lua\nloadstring(game:HttpGet("https://lumin.rocks/"))()\n```'
+        script = '```lua\nloadstring(game:HttpGet("https://lumin.rest/"))()\n```'
         await interaction.response.send_message(script, ephemeral=True)
 
 
@@ -60,7 +60,7 @@ class AllGames(commands.Cog):
                 description=lines,
                 color=discord.Color.blurple(),
             )
-            .set_description(f"All games are supported and fully working.\n- View them on our website [by clicking here](https://lumin.rocks/).\n{lines}")
+            .set_description(f"All games are supported and fully working.\n- View them on our website [by clicking here](https://lumin.rest/).\n{lines}")
             .set_timestamp()
             .build()
         )
