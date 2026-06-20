@@ -62,12 +62,7 @@ class NewRoleGiver(commands.Cog):
 
         view = RoleGiverView(role)
         await target_channel.send(embed=embed, view=view)
-        if channel and channel != ctx.channel:
-            await ctx.reply(
-                f"Role giver sent to {channel.mention}.", ephemeral=True
-            )
-        else:
-            await ctx.message.delete()
+        await ctx.reply("Role giver sent!", ephemeral=True)
 
 
 async def setup(bot: commands.Bot) -> None:
