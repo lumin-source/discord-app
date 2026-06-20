@@ -1,9 +1,9 @@
 from __future__ import annotations
+from discord.ext import tasks
 
 import logging
-
 import aiohttp
-from discord.ext import tasks
+
 
 EXECUTORS_URL = "https://raw.githubusercontent.com/lumin-rocks/garbage/main/executors.txt"
 

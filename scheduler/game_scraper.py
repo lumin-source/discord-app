@@ -1,10 +1,10 @@
 from __future__ import annotations
+from discord.ext import tasks
 
 import logging
 import time
-
 import aiohttp
-from discord.ext import tasks
+
 
 GAMES_URL = "https://raw.githubusercontent.com/lumin-rocks/garbage/main/games.txt"
 

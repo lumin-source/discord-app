@@ -1,13 +1,11 @@
 from __future__ import annotations
+from discord.ext import tasks
+from modules.embed_builder import EmbedBuilder
 
 import logging
-
 import discord
-from discord.ext import tasks
-
 import scheduler.game_scraper as game_scraper
 import scheduler.executor_scraper as executor_scraper
-from modules.embed_builder import EmbedBuilder
 
 LIVE_CHANNEL_ID = 1508174002680496350
 SCRIPT_URL = "https://lumin.rest/"

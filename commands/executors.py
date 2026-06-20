@@ -1,8 +1,8 @@
-import discord
+from modules.embed_builder import EmbedBuilder
 from discord.ext import commands
 
+import discord
 import scheduler.executor_scraper as executor_scraper
-from modules.embed_builder import EmbedBuilder
 
 
 class ExecutorsView(discord.ui.View):

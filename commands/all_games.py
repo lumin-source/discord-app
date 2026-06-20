@@ -1,10 +1,9 @@
-import time
-
-import discord
+from modules.embed_builder import EmbedBuilder
 from discord.ext import commands
 
+import time
+import discord
 import scheduler.game_scraper as game_scraper
-from modules.embed_builder import EmbedBuilder
 
 
 class AllGamesView(discord.ui.View):

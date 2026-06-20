@@ -1,7 +1,7 @@
-import discord
+from modules.embed_builder import EmbedBuilder
 from discord.ext import commands
 
-from modules.embed_builder import EmbedBuilder
+import discord
 
 
 class PingView(discord.ui.View):

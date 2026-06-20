@@ -1,9 +1,8 @@
 from __future__ import annotations
-
-import logging
+from discord.ext import tasks
 from datetime import UTC, datetime, timedelta
 
-from discord.ext import tasks
+import logging
 
 
 def register(bot) -> None:

@@ -1,7 +1,8 @@
-import discord
 from discord.ext import commands
-
 from modules.embed_builder import EmbedBuilder
+
+import discord
+
 
 STATUS_CHANNEL_ID = 1508004563007967392
 
